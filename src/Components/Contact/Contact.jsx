@@ -4,7 +4,7 @@ import msg_icon from'../../assets/msg-icon.jpg'
 import mail_icon from'../../assets/mail-icon.jpg'
 import phone_icon from'../../assets/phone-icon.png'
 import location_icon from'../../assets/location-icon.jpg'
-import white_arrow from'../../assets/nexticon.jpg'
+
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <div className="contact">
        <div className="contact-col">
-        <h3>Send us a message <img src={msg_icon} alt=''/></h3>
+        <h3>Send us a message <img src={msg_icon} alt='message-icon'/></h3>
         <p>Feel free to reach out through contact from or fid our contact information below. Your feedback , questions , and suggestions are 
             important to us as we strive to provide exceptional service to our university community.
         </p>
@@ -66,7 +66,23 @@ const Contact = () => {
             <input type="tel" name ='phone ' placeholder='Enter your mobile number' required/>
             <label>Write your message here</label>
             <textarea name="message" rows='6' placeholder='Enter your message' required></textarea>
-            <button type='submit' className='btn dark-btn'> Submit now <img src={white_arrow} alt=''/></button>
+           <button type='submit' className='btn dark-btn'>
+  Submit now
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#ffffff"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
+  </svg>
+</button>
         </form>
         <span>{result}</span>
        </div>

@@ -1,27 +1,36 @@
-.programs{
+.programs {
     margin: 80px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
-.program img {
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* يطبق على صورة البرنامج الأساسية فقط (على اللابتوب) */
+.program > img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
 }
-.program{
-    flex-basis: 31%;
-    position: relative;
-}
-.caption{
+
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 15,152, 0.3);
+    background: rgba(0, 15, 152, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,14 +41,18 @@
     padding-top: 70%;
     transition: 0.4s;
 }
+
 .caption img {
     width: 60px;
+    height: auto;
     margin-bottom: 10px;
 }
-.program:hover .caption{
+
+.program:hover .caption {
     opacity: 1;
     padding-top: 0;
 }
+
 @media (max-width: 650px) {
     .programs {
         flex-direction: column;
@@ -51,28 +64,16 @@
         flex-basis: auto;
         width: 100%;
         margin: 0;
-        position: relative;
-        overflow: hidden; /* بيمنع أي شي يطلع برا حدود الصورة */
-        border-radius: 10px;
     }
 
-    /* هون حطينا > كرمال يطبق بس عالصورة الأساسية مش عالأيقونة */
     .program > img {
-        width: 100%;
         height: 250px;
-        object-fit: cover;
     }
 
     .caption {
         padding-top: 0;
         opacity: 0;
         transition: 0.4s;
-    }
-
-    /* تثبيت حجم الأيقونة بالموبايل */
-    .caption img {
-        width: 60px;
-        height: auto;
     }
 
     .program:hover .caption,

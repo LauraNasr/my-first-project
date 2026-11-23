@@ -10,13 +10,35 @@ import user4 from '../../assets/user4.jpg'
 const MOBILE_BREAKPOINT = 800;
 
 const slides = [
-  { id: 1, img: user1, name: 'William Jackson 1' },
-  { id: 2, img: user2, name: 'William Jackson 2' },
-  { id: 3, img: user3, name: 'William Jackson 3' },
-  { id: 4, img: user4, name: 'William Jackson 4' },
+  {
+    id: 1,
+    img: user1,
+    name: 'Maya Haddad',
+    location: 'Education Major, Edusity',
+    text: 'The hands-on teaching practice and mentor feedback helped me step into a real classroom with confidence. I truly felt prepared to support students and lead from day one.'
+  },
+  {
+    id: 2,
+    img: user2,
+    name: 'Liam Carter',
+    location: 'Educational Leadership, Edusity',
+    text: 'What stood out most was how much the faculty cares about shaping thoughtful leaders. Every course connected theory to real school challenges and community impact.'
+  },
+  {
+    id: 3,
+    img: user3,
+    name: 'Tariq Harb',
+    location: 'Curriculum & Instruction, Edusity',
+    text: 'Our workshops and group projects pushed me to design lessons that actually engage learners. The supportive environment here made growth feel natural and exciting.'
+  },
+  {
+    id: 4,
+    img: user4,
+    name: 'Elena Rossi',
+    location: 'School Counseling, Edusity',
+    text: 'From practical training to close guidance from professors, Edusity gave me the tools to guide students with empathy and clarity. It really feels like a place built for future leaders.'
+  },
 ];
-
-const TEXT = `Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.`;
 
 // mobile: slide wa7de bel saf, desktop: 2 slides bel saf
 const getMaxIndex = () => {
@@ -44,17 +66,17 @@ const Testimonials = () => {
 
       <div className="slider">
         <ul style={{ transform: `translateX(calc(${index} * -100% / var(--visible)))` }}>
-          {slides.map(({ id, img, name }) => (
+          {slides.map(({ id, img, name, location, text }) => (
             <li key={id}>
               <div className="slide">
                 <div className="user-info">
                   <img src={img} alt={name} height={80} />
                   <div>
                     <h3>{name}</h3>
-                    <span>Edusity, USA</span>
+                    <span>{location}</span>
                   </div>
                 </div>
-                <p>{TEXT}</p>
+                <p>{text}</p>
               </div>
             </li>
           ))}

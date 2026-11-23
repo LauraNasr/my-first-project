@@ -19,6 +19,23 @@
     object-fit: cover;
     border-radius: 10px;
 }
+.btn.dark-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn.dark-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.btn.dark-btn:hover svg {
+    transform: translateX(4px);
+}
 
 @media (max-width: 800px) {
     .gallery {
