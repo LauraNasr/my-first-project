@@ -40,12 +40,21 @@
     opacity: 1;
     padding-top: 0;
 }
-@media (max-width :650px){
-    .programs{
+@media (max-width: 650px) {
+    .programs {
         flex-direction: column;
+        align-items: stretch;   /* kel soura tekhod el 3ard kello */
     }
-    .program{
-        flex-basis: 100%;
-        margin: 20px;
+
+    .program {
+        flex-basis: auto;       /* mish 100%, la2an bel column byeshteghel 3al irtifa3 */
+        width: 100%;
+        margin: 20px 0;         /* 0 3al yamin w yasar la ma yekhtalef el 3ard */
+    }
+
+    .program img {
+        width: 100%;
+        height: 250px;          /* nafs el irtifa3 lal kel */
+        object-fit: cover;      /* el soura ma btetmatta wala btenkamesh */
     }
 }

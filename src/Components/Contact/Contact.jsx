@@ -38,11 +38,25 @@ const Contact = () => {
         <p>Feel free to reach out through contact from or fid our contact information below. Your feedback , questions , and suggestions are 
             important to us as we strive to provide exceptional service to our university community.
         </p>
-        <ul>
-            <li><img src={ mail_icon} alt=''/>Contact@GreatStack.dev</li>
-            <li><img src={phone_icon} alt=''/>+1 123-456-7890</li>
-            <li><img src={ location_icon} alt=''/>77 Massachusetts Ave ,Cambridge<br/> MA 02139 , United States</li>
-        </ul>
+      <ul>
+  <li>
+    <a href="mailto:Contact@GreatStack.dev">
+      <img src={mail_icon} alt="" />
+      Contact@GreatStack.dev
+    </a>
+  </li>
+  <li>
+    <a href="tel:+11234567890">
+      <img src={phone_icon} alt="" />
+      +1 123-456-7890
+    </a>
+  </li>
+  <li>
+    <img src={location_icon} alt="" />
+    77 Massachusetts Ave, Cambridge<br />
+    MA 02139, United States
+  </li>
+</ul>
        </div>
        <div className="contact-col">
         <form onSubmit={onSubmit}>

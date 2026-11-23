@@ -1,26 +1,33 @@
-.campus{
+
+.campus {
     margin: 80px auto;
     width: 90%;
     text-align: center;
 }
-.gallery{
+
+.gallery {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    gap: 15px;
 }
 
 .gallery img {
-    width: 23%;
-    border-radius: 10px;
+    width: 24%;
     height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 @media(max-width :800px){
     .gallery{
         flex-wrap: wrap;
     }
+   
     .gallery img {
         width: 48%;
+        height: 200px;          /* ghayyer el rakam 7asab ma bdak */
+        object-fit: cover;      /* el soura ma btetmatta w btenkamesh bel nazafe */
         margin-bottom: 25px;
     }
 }
