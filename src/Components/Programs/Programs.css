@@ -43,18 +43,41 @@
 @media (max-width: 650px) {
     .programs {
         flex-direction: column;
-        align-items: stretch;   /* kel soura tekhod el 3ard kello */
+        align-items: stretch;
+        gap: 20px;
     }
 
     .program {
-        flex-basis: auto;       /* mish 100%, la2an bel column byeshteghel 3al irtifa3 */
+        flex-basis: auto;
         width: 100%;
-        margin: 20px 0;         /* 0 3al yamin w yasar la ma yekhtalef el 3ard */
+        margin: 0;
+        position: relative;
+        overflow: hidden; /* بيمنع أي شي يطلع برا حدود الصورة */
+        border-radius: 10px;
     }
 
-    .program img {
+    /* هون حطينا > كرمال يطبق بس عالصورة الأساسية مش عالأيقونة */
+    .program > img {
         width: 100%;
-        height: 250px;          /* nafs el irtifa3 lal kel */
-        object-fit: cover;      /* el soura ma btetmatta wala btenkamesh */
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .caption {
+        padding-top: 0;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    /* تثبيت حجم الأيقونة بالموبايل */
+    .caption img {
+        width: 60px;
+        height: auto;
+    }
+
+    .program:hover .caption,
+    .program:active .caption {
+        opacity: 1;
+        padding-top: 0;
     }
 }

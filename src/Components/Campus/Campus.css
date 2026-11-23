@@ -19,15 +19,20 @@
     object-fit: cover;
     border-radius: 10px;
 }
-@media(max-width :800px){
-    .gallery{
+
+@media (max-width: 800px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        gap: 15px;
     }
-   
+
     .gallery img {
-        width: 48%;
-        height: 200px;          /* ghayyer el rakam 7asab ma bdak */
-        object-fit: cover;      /* el soura ma btetmatta w btenkamesh bel nazafe */
-        margin-bottom: 25px;
+        width: calc(50% - 7.5px);
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 0;
+        box-sizing: border-box;
     }
 }
