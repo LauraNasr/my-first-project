@@ -40,7 +40,7 @@ browse campus photos, read student testimonials, and get in touch through a cont
 
 ```bash
 git clone https://github.com/LauraNasr/my-first-project.git
-cd REPO-NAME
+cd my-first-project
 npm install
 npm run dev
 ```
