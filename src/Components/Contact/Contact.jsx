@@ -40,19 +40,19 @@ const Contact = () => {
         </p>
       <ul>
   <li>
-    <a href="mailto:Contact@GreatStack.dev">
-      <img src={mail_icon} alt="" />
-      Contact@GreatStack.dev
+    <a href="mailto:lauramehsennasr9@gmail.com">
+      <img src={mail_icon} alt="mail icon" />
+      lauramehsennasr9@gmail.com
     </a>
   </li>
   <li>
     <a href="tel:+11234567890">
-      <img src={phone_icon} alt="" />
+      <img src={phone_icon} alt="phone icon" />
       +1 123-456-7890
     </a>
   </li>
   <li>
-    <img src={location_icon} alt="" />
+    <img src={location_icon} alt="location icon" />
     77 Massachusetts Ave, Cambridge<br />
     MA 02139, United States
   </li>
