@@ -31,11 +31,23 @@
     display: flex;
     align-items: center;
     margin: 20px 0;
+    gap: 2px;
 }
+
+.contact-col ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
 .contact-col ul li img {
     width: 25px;
-    margin-right: 10px;
+    height: 25px;
+    object-fit: contain;
     mix-blend-mode: multiply;
+    flex-shrink: 0;
 }
 
 .contact form input , 
