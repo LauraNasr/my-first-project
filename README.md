@@ -39,7 +39,7 @@ browse campus photos, read student testimonials, and get in touch through a cont
 ## Run locally
 
 ```bash
-git clone https://github.com/LauraNasr/REPO-NAME.git
+git clone https://github.com/LauraNasr/my-first-project.git
 cd REPO-NAME
 npm install
 npm run dev
